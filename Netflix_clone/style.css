@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    ;
+    height: 100vh;
+    position: relative;
+
+}
+
+.main .box {
+    background-color: black;
+    height: 100vh;
+    opacity: 0.64;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+nav img {
+    color: red;
+    height: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-signin {
+    background-color: #E50815;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-signin:hover {
+    background-color: #c40912;
+}
+
+.btn-getstart {
+    background-color: #E50815;
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+    height: 50px;
+    width: 230px;
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-getstart:hover {
+    background-color: #c40912;
+}
+
+.hero {
+    height: calc(100% - 65px);
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 70px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.seperate {
+    height: 7px;
+    background-color: rgb(49, 48, 48);
+    position: relative;
+    z-index: 20;
+}
+
+.input-email {
+    width: 360px;
+    padding: 14px 20px;
+    background-color: rgba(24, 24, 24, 0.8);
+    border: 1px solid rgba(176, 163, 163, 0.4);
+    border-radius: 3px;
+    font-size: 10;
+    color: white;
+
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.first-right {
+    position: relative;
+}
+
+.first-right img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.first-right video {
+    position: absolute;
+    top: 66px;
+    left: 60px;
+    width: 25vw;
+}
+
+.first span {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first p {
+    font-size: 24px;
+}
+
+.faq {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.faq span {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.accordion {
+    max-width: 80%;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    background: #2d2d2d;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion li label:hover {
+    background-color: #3f3f3f;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.accordion .content {
+    background-color: #2d2d2d;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+
+}
+.end span{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+footer{
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+    padding: 80px 0;
+
+}
+
+.questions{
+    padding-bottom:20px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a{
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
